@@ -160,4 +160,6 @@ def one_frame():
 	plt.imshow(img, cmap='gray')
 	plt.show()
 
-run_NR_P_ref()
+# run_NR_P_ref()
+for elem in LiveVD_refs():
+	print(elem)
