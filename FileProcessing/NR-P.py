@@ -112,7 +112,7 @@ def motion_test():
 		print("Values for " + btr + "kbs compressed video:")
 		print(motion)
 
-motion_test()
+# motion_test()
 
 def noise_test():
 	ref = noise_mean_ratio(768, 432, "../resources/LiveVD/ref/pa1_25fps_768x432.yuv")
@@ -154,9 +154,10 @@ Noise test performed on the first ten frames of the Pedestrian Area video:
 # 		mean, ratio = blur_mean_ratio(768, 432, "../resources/LiveVD/Compressed/" + btr + "k/pa1_25fps_768x432_btr" + btr + "k.yuv")
 # 		print("Blur at " + btr + " - mean: " + str(mean) + ", ratio: " + str(ratio))
 
-
 def one_frame():
 	Y = Ychann_frame_gen(768, 432, "../resources/LiveVD/Compressed/1024k/pa1_25fps_768x432_btr1024k.yuv")
 	img = next(Y)
 	plt.imshow(img, cmap='gray')
 	plt.show()
+
+run_NR_P_ref()
