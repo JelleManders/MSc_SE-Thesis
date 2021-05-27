@@ -101,7 +101,7 @@ def blockiness_test():
 	block_comp = blockiness(768, 432, "../resources/LiveVD/Compressed/0064k/pa1_25fps_768x432_btr0064k.yuv")
 	print("block_comp: " + str(block_comp))
 
-blockiness_test()
+# blockiness_test()
 
 def motion_test():
 	print("Testing motion intensity, ref video: ")
@@ -111,6 +111,8 @@ def motion_test():
 		motion = motion_intensity(768, 432, "../resources/LiveVD/Compressed/" + btr + "k/pa1_25fps_768x432_btr" + btr + "k.yuv")
 		print("Values for " + btr + "kbs compressed video:")
 		print(motion)
+
+motion_test()
 
 def noise_test():
 	ref = noise_mean_ratio(768, 432, "../resources/LiveVD/ref/pa1_25fps_768x432.yuv")
