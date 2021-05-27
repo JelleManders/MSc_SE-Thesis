@@ -84,7 +84,7 @@ def LiveVD_refs():
 	paths = []
 	for cat in LiveVD_cats():
 			abs_path = LiveVD_relative_path(True, cat)
-			paths.append(".." + abs_path[29:])
+			paths.append(abs_path)
 	return paths
 
 def LiveVD_dis():
