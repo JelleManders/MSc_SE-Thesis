@@ -25,7 +25,7 @@ Blur mean, Noise mean and -ratio, Blockiness, and Motion Intensity. Blur ratio a
 '''
 def run_NR_P_ref():
 	print("Starting NR-P metrics of reference videos...")
-	results_file = open("../resources/LiveVD/Scores/NR-P_ref_scores.txt")
+	results_file = open("../resources/LiveVD/Scores/NR-P_ref_scores.txt", "w")
 	print("Opened results file...")
 	for video in LiveVD_refs():
 		try:
