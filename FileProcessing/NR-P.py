@@ -27,6 +27,8 @@ def run_NR_P_ref():
 	print("Starting NR-P metrics of reference videos...")
 	results_file = open("../resources/LiveVD/Scores/NR-P_ref_scores.txt", "w")
 	print("Opened results file...")
+	results_file.write("Test")
+	return
 	for video in LiveVD_refs():
 		try:
 			print("Starting analysis of " + video)
