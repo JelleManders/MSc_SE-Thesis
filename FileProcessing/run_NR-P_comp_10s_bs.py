@@ -8,7 +8,7 @@ from Tools import LiveVD_dis_cat, t
 
 
 def run_NR_P_comp_10s_BlueSky():
-	log_file = open("log.txt", "w")
+	log_file = open("Logs/NR-P_comp_10s_bs.txt", "w")
 	log_file.write(t() + " > comp_10s_bs: Starting NR-P metrics of reference videos...")
 	results_file = open("../resources/LiveVD/Scores/NR-P_comp_10s_bs_scores.txt", "w")
 	log_file.write(t() + " > comp_10s_bs: Opened results file...")
@@ -39,4 +39,4 @@ def run_NR_P_comp_10s_BlueSky():
 			log_file.write(t() + " > comp_10s_bs: Error occured on file " + video + ", error message: " + str(e))
 	log_file.write(t() + " > comp_10s_bs: Finished analysis of all videos! closing results_file...")
 	results_file.close()
-	log_file.write(t() + " > comp_10s_bs: Done. Results can be found in ../resources/LiveVD/Scores/NR-P_ref_scores.txt")
+	log_file.write(t() + " > comp_10s_bs: Done. Results can be found in ../resources/LiveVD/Scores/NR-P_comp_10s_bs_scores.txt")

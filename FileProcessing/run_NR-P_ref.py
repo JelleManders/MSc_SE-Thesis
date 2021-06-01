@@ -11,8 +11,7 @@ run_NR-P_ref will house all of the non-compression-based metrics. They will be a
 Blur mean, Noise mean and -ratio, Blockiness, and Motion Intensity. Blur ratio and Jerkiness are to be omitted
 '''
 def run_NR_P_ref():
-	log_file = open("log.txt", "w")
-	log_file.write(t() + " > ref: ")
+	log_file = open("Logs/NR-P_ref.txt", "w")
 	log_file.write(t() + " > ref: Starting NR-P metrics of reference videos...")
 	results_file = open("../resources/LiveVD/Scores/NR-P_ref_scores.txt", "w")
 	log_file.write(t() + " > ref: Opened results file...")
