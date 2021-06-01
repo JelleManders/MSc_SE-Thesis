@@ -39,4 +39,4 @@ def run_NR_P_comp_10s_Station():
 			log_file.write(t() + " > Error occured on file " + video + ", error message: " + str(e))
 	log_file.write(t() + " > Finished analysis of all videos! closing results_file...")
 	results_file.close()
-	log_file.write(t() + " > Done. Results can be found in ../resources/LiveVD/Scores/NR-P_comp_10s_sh_scores.txt")
+	log_file.write(t() + " > Done. Results can be found in ../resources/LiveVD/Scores/NR-P_comp_10s_st_scores.txt")
