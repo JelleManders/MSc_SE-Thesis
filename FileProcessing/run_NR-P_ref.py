@@ -12,21 +12,21 @@ Blur mean, Noise mean and -ratio, Blockiness, and Motion Intensity. Blur ratio a
 '''
 def run_NR_P_ref():
 	log_file = open("Logs/NR-P_ref.txt", "w")
-	log_file.write(t() + " > ref: Starting NR-P metrics of reference videos...")
+	log_file.write(t() + " > ref: Starting NR-P metrics of reference videos..." + "\n")
 	results_file = open("../resources/LiveVD/Scores/NR-P_ref_scores.txt", "w")
-	log_file.write(t() + " > ref: Opened results file...")
+	log_file.write(t() + " > ref: Opened results file..." + "\n")
 	for video in LiveVD_refs():
 		try:
-			log_file.write(t() + " > ref: Starting analysis of " + video)
+			log_file.write(t() + " > ref: Starting analysis of " + video + "\n")
 			blur = blur_laplacian(768, 432, video)
-			log_file.write(t() + " > ref: finished blur: " + str(blur))
+			log_file.write(t() + " > ref: finished blur: " + str(blur) + "\n")
 			noise_mean, noise_ratio = noise_mean_ratio(768, 432, video)
-			log_file.write(t() + " > ref: finished noise: mean = " + str(noise_mean) + ", ratio = " + str(noise_ratio))
+			log_file.write(t() + " > ref: finished noise: mean = " + str(noise_mean) + ", ratio = " + str(noise_ratio) + "\n")
 			block = blockiness(768,432, video)
-			log_file.write(t() + " > ref: finished blockiness: " + str(blockiness))
+			log_file.write(t() + " > ref: finished blockiness: " + str(block) + "\n")
 			motion = motion_intensity(768, 432, video)
-			log_file.write(t() + " > ref: finished motion intensity: " + str(motion))
-			log_file.write(t() + " > ref: Finished analysis of " + video)
+			log_file.write(t() + " > ref: finished motion intensity: " + str(motion) + "\n")
+			log_file.write(t() + " > ref: Finished analysis of " + video + "\n")
 
 			results_file.write(
 				video[24:26] + "\t" + 
@@ -34,14 +34,14 @@ def run_NR_P_ref():
 				"N_mean:  " + str(round(noise_mean, 5)) + "\t" + 
 				"N_ratio: " + str(round(noise_ratio, 5)) + "\t" + 
 				"Block:   " + str(round(block, 5)) + "\t" + 
-				"Motion:  " + str(round(motion, 5)) + "\t"
+				"Motion:  " + str(round(motion, 5)) + "\n"
 			)
-			log_file.write(t() + " > ref: Wrote results of " + video + " to results file.")
+			log_file.write(t() + " > ref: Wrote results of " + video + " to results file." + "\n")
 		except Exception as e:
-			results_file.write("Error occured: " + str(e))
-			log_file.write(t() + " > ref: Error occured on file " + video + ", error message: " + str(e))
-	log_file.write(t() + " > ref: Finished analysis of all videos! closing results_file...")
+			results_file.write("Error occured: " + str(e) + "\n")
+			log_file.write(t() + " > ref: Error occured on file " + video + ", error message: " + str(e) + "\n")
+	log_file.write(t() + " > ref: Finished analysis of all videos! closing results_file..." + "\n")
 	results_file.close()
-	log_file.write(t() + " > ref: Done. Results can be found in ../resources/LiveVD/Scores/NR-P_ref_scores.txt")
+	log_file.write(t() + " > ref: Done. Results can be found in ../resources/LiveVD/Scores/NR-P_ref_scores.txt" + "\n")
 
 run_NR_P_ref()
