@@ -5,6 +5,10 @@ File: Tools.py
 '''
 
 import numpy as np
+from time import gmtime, strftime
+
+def t():
+	return strftime("%Y-%m-%d %H:%M:%S", gmtime())
 
 def laplacian(frame):
 	mask = np.array([
@@ -92,6 +96,12 @@ def LiveVD_dis():
 	for cat in LiveVD_cats():
 		for btr in bitrates():
 			paths.append(LiveVD_relative_path(False, cat, btr))
+	return paths
+
+def LiveVD_dis_cat(cat):
+	paths = []
+	for btr in bitrates():
+		paths.append(LiveVD_relative_path(False, cat, btr))
 	return paths
 
 def LiveVD_ref_to_dis():
