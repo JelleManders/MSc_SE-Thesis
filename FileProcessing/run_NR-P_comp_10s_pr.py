@@ -40,3 +40,5 @@ def run_NR_P_comp_10s_ParkRun():
 	log_file.write(t() + " > Finished analysis of all videos! closing results_file...")
 	results_file.close()
 	log_file.write(t() + " > Done. Results can be found in ../resources/LiveVD/Scores/NR-P_comp_10s_pr_scores.txt")
+
+run_NR_P_comp_10s_ParkRun()

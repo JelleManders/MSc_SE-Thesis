@@ -43,3 +43,5 @@ def run_NR_P_ref():
 	log_file.write(t() + " > ref: Finished analysis of all videos! closing results_file...")
 	results_file.close()
 	log_file.write(t() + " > ref: Done. Results can be found in ../resources/LiveVD/Scores/NR-P_ref_scores.txt")
+
+run_NR_P_ref()
