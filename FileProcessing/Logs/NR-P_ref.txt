@@ -1,0 +1,74 @@
+2021-06-01 11:53:09 > ref: Starting NR-P metrics of reference videos...
+2021-06-01 11:53:09 > ref: Opened results file...
+2021-06-01 11:53:09 > ref: Starting analysis of ../resources/LiveVD/ref/bs1_25fps_768x432.yuv
+2021-06-01 12:15:23 > ref: finished blur: 1237.4959575746186
+2021-06-01 12:58:56 > ref: finished noise: mean = 3.3142588185151407, ratio = 0.6677137614585114
+2021-06-01 13:48:58 > ref: finished blockiness: 1.8107225085484584
+2021-06-01 13:48:59 > ref: finished motion intensity: 3769.485898242018
+2021-06-01 13:48:59 > ref: Finished analysis of ../resources/LiveVD/ref/bs1_25fps_768x432.yuv
+2021-06-01 13:48:59 > ref: Wrote results of ../resources/LiveVD/ref/bs1_25fps_768x432.yuv to results file.
+2021-06-01 13:48:59 > ref: Starting analysis of ../resources/LiveVD/ref/mc1_50fps_768x432.yuv
+2021-06-01 14:42:16 > ref: finished blur: 1441.8161134259244
+2021-06-01 16:23:14 > ref: finished noise: mean = 4.471226740471586, ratio = 0.5844998673804012
+2021-06-01 18:17:46 > ref: finished blockiness: 1.8660901297252808
+2021-06-01 18:17:46 > ref: finished motion intensity: 3587.191665110131
+2021-06-01 18:17:46 > ref: Finished analysis of ../resources/LiveVD/ref/mc1_50fps_768x432.yuv
+2021-06-01 18:17:46 > ref: Wrote results of ../resources/LiveVD/ref/mc1_50fps_768x432.yuv to results file.
+2021-06-01 18:17:46 > ref: Starting analysis of ../resources/LiveVD/ref/pa1_25fps_768x432.yuv
+2021-06-01 18:44:14 > ref: finished blur: 179.08251391300138
+2021-06-01 19:34:19 > ref: finished noise: mean = 2.647844276400555, ratio = 0.5769864848572531
+2021-06-01 20:32:09 > ref: finished blockiness: 1.9168245694256927
+2021-06-01 20:32:09 > ref: finished motion intensity: 3093.291893896901
+2021-06-01 20:32:09 > ref: Finished analysis of ../resources/LiveVD/ref/pa1_25fps_768x432.yuv
+2021-06-01 20:32:09 > ref: Wrote results of ../resources/LiveVD/ref/pa1_25fps_768x432.yuv to results file.
+2021-06-01 20:32:09 > ref: Starting analysis of ../resources/LiveVD/ref/pr1_50fps_768x432.yuv
+2021-06-01 21:25:55 > ref: finished blur: 4320.064460865159
+2021-06-01 23:04:28 > ref: finished noise: mean = 12.007085151416796, ratio = 0.5123959960937496
+2021-06-02 00:58:39 > ref: finished blockiness: 1.8403621860086943
+2021-06-02 00:58:39 > ref: finished motion intensity: 4201.472260816948
+2021-06-02 00:58:39 > ref: Finished analysis of ../resources/LiveVD/ref/pr1_50fps_768x432.yuv
+2021-06-02 00:58:39 > ref: Wrote results of ../resources/LiveVD/ref/pr1_50fps_768x432.yuv to results file.
+2021-06-02 00:58:39 > ref: Starting analysis of ../resources/LiveVD/ref/rb1_25fps_768x432.yuv
+2021-06-02 01:25:23 > ref: finished blur: 302.3546918885031
+2021-06-02 02:14:21 > ref: finished noise: mean = 6.2834050590801525, ratio = 0.46503134645061683
+2021-06-02 03:11:12 > ref: finished blockiness: 1.8469285460935216
+2021-06-02 03:11:12 > ref: finished motion intensity: 5064.587900354596
+2021-06-02 03:11:12 > ref: Finished analysis of ../resources/LiveVD/ref/rb1_25fps_768x432.yuv
+2021-06-02 03:11:12 > ref: Wrote results of ../resources/LiveVD/ref/rb1_25fps_768x432.yuv to results file.
+2021-06-02 03:11:12 > ref: Starting analysis of ../resources/LiveVD/ref/rh1_25fps_768x432.yuv
+2021-06-02 03:37:51 > ref: finished blur: 68.26771633873457
+2021-06-02 04:23:24 > ref: finished noise: mean = 2.269446815457387, ratio = 0.6135121045524687
+2021-06-02 05:15:32 > ref: finished blockiness: 1.920370871316949
+2021-06-02 05:15:33 > ref: finished motion intensity: 2583.355681915242
+2021-06-02 05:15:33 > ref: Finished analysis of ../resources/LiveVD/ref/rh1_25fps_768x432.yuv
+2021-06-02 05:15:33 > ref: Wrote results of ../resources/LiveVD/ref/rh1_25fps_768x432.yuv to results file.
+2021-06-02 05:15:33 > ref: Starting analysis of ../resources/LiveVD/ref/sf1_25fps_768x432.yuv
+2021-06-02 05:39:42 > ref: finished blur: 120.77913107638886
+2021-06-02 05:59:22 > ref: finished noise: mean = 4.1147581493714425, ratio = 0.5688509837962962
+2021-06-02 06:20:12 > ref: finished blockiness: 1.9336550367636918
+2021-06-02 06:20:12 > ref: finished motion intensity: 3689.899019131442
+2021-06-02 06:20:12 > ref: Finished analysis of ../resources/LiveVD/ref/sf1_25fps_768x432.yuv
+2021-06-02 06:20:12 > ref: Wrote results of ../resources/LiveVD/ref/sf1_25fps_768x432.yuv to results file.
+2021-06-02 06:20:12 > ref: Starting analysis of ../resources/LiveVD/ref/sh1_50fps_768x432.yuv
+2021-06-02 06:39:21 > ref: finished blur: 1355.856099163291
+2021-06-02 07:15:29 > ref: finished noise: mean = 5.559469125301081, ratio = 0.592347228250386
+2021-06-02 07:57:14 > ref: finished blockiness: 1.8640202770583099
+2021-06-02 07:57:14 > ref: finished motion intensity: 3798.1543647214276
+2021-06-02 07:57:14 > ref: Finished analysis of ../resources/LiveVD/ref/sh1_50fps_768x432.yuv
+2021-06-02 07:57:14 > ref: Wrote results of ../resources/LiveVD/ref/sh1_50fps_768x432.yuv to results file.
+2021-06-02 07:57:14 > ref: Starting analysis of ../resources/LiveVD/ref/st1_25fps_768x432.yuv
+2021-06-02 08:06:47 > ref: finished blur: 261.00348755787047
+2021-06-02 08:24:45 > ref: finished noise: mean = 3.1657824066848232, ratio = 0.541078426408179
+2021-06-02 08:45:41 > ref: finished blockiness: 1.9193171698732665
+2021-06-02 08:45:41 > ref: finished motion intensity: 2940.806133562327
+2021-06-02 08:45:41 > ref: Finished analysis of ../resources/LiveVD/ref/st1_25fps_768x432.yuv
+2021-06-02 08:45:41 > ref: Wrote results of ../resources/LiveVD/ref/st1_25fps_768x432.yuv to results file.
+2021-06-02 08:45:41 > ref: Starting analysis of ../resources/LiveVD/ref/tr1_25fps_768x432.yuv
+2021-06-02 08:55:17 > ref: finished blur: 330.2341205632713
+2021-06-02 09:13:11 > ref: finished noise: mean = 5.040579912112376, ratio = 0.4830058955439813
+2021-06-02 09:34:02 > ref: finished blockiness: 1.8948997690503309
+2021-06-02 09:34:02 > ref: finished motion intensity: 4748.9682356357025
+2021-06-02 09:34:02 > ref: Finished analysis of ../resources/LiveVD/ref/tr1_25fps_768x432.yuv
+2021-06-02 09:34:02 > ref: Wrote results of ../resources/LiveVD/ref/tr1_25fps_768x432.yuv to results file.
+2021-06-02 09:34:02 > ref: Finished analysis of all videos! closing results_file...
+2021-06-02 09:34:02 > ref: Done. Results can be found in ../resources/LiveVD/Scores/NR-P_ref_scores.txt
