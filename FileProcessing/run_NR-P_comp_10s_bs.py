@@ -31,7 +31,7 @@ def run_NR_P_comp_10s_BlueSky():
 				"N_mean:  " + str(round(noise_mean, 5)) + "\t" + 
 				"N_ratio: " + str(round(noise_ratio, 5)) + "\t" + 
 				"Block:   " + str(round(block, 5)) + "\t" + 
-				"Motion:  " + str(round(motion, 5)) + "\t"
+				"Motion:  " + str(round(motion, 5)) + "\n"
 			)
 			log_file.write(t() + " > Wrote results of " + video + " to results file." + "\n")
 		except Exception as e:
