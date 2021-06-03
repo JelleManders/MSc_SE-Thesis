@@ -1,7 +1,8 @@
 # Don't copy all of the resources, but do include the scores
 /resources/*
-!/resources/LiveVD/Scores
-!/resources/LiveVD/Scores/*
+!/resources/LiveVD/
+/resources/LiveVD/*
+!/resources/LiveVD/Scores/
 
 /VMAF_VirtEnv/*
 /libvmaf/*
