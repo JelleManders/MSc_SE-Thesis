@@ -1,0 +1,8 @@
+bs	btr0064k	Blur:    #data	N_mean:  #data	N_ratio: #data	Block:   #data	Motion:  #data
+bs	btr0640k	Blur:    #data	N_mean:  #data	N_ratio: #data	Block:   #data	Motion:  #data
+bs	btr0768k	Blur:    #data	N_mean:  #data	N_ratio: #data	Block:   #data	Motion:  #data
+bs	btr1024k	Blur:    #data	N_mean:  #data	N_ratio: #data	Block:   #data	Motion:  #data
+bs	btr2048k	Blur:    #data	N_mean:  #data	N_ratio: #data	Block:   #data	Motion:  #data
+bs	btr3072k	Blur:    #data	N_mean:  #data	N_ratio: #data	Block:   #data	Motion:  #data
+bs	btr4096k	Blur:    #data	N_mean:  #data	N_ratio: #data	Block:   #data	Motion:  #data
+bs	btr5120k	Blur:    #data	N_mean:  #data	N_ratio: #data	Block:   #data	Motion:  #data

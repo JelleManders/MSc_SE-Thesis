@@ -1,0 +1,8 @@
+rh	btr0064k	Blur:    32.50966	N_mean:  1.63423	N_ratio: 0.60866	Block:   1.95093	Motion:  1858.98302
+rh	btr0640k	Blur:    58.03525	N_mean:  1.99117	N_ratio: 0.62837	Block:   1.92344	Motion:  2392.38615
+rh	btr0768k	Blur:    59.40409	N_mean:  1.99612	N_ratio: 0.62662	Block:   1.92291	Motion:  2415.99783
+rh	btr1024k	Blur:    60.9625	N_mean:  2.01701	N_ratio: 0.62439	Block:   1.92166	Motion:  2446.76443
+rh	btr2048k	Blur:    64.20967	N_mean:  2.11292	N_ratio: 0.6176	Block:   1.92004	Motion:  2505.3474
+rh	btr3072k	Blur:    65.40858	N_mean:  2.16515	N_ratio: 0.61504	Block:   1.91998	Motion:  2529.67692
+rh	btr4096k	Blur:    66.02999	N_mean:  2.20024	N_ratio: 0.61431	Block:   1.91986	Motion:  2542.94474
+rh	btr5120k	Blur:    66.4204	N_mean:  2.22326	N_ratio: 0.61399	Block:   1.91983	Motion:  2550.53181
