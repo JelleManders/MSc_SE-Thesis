@@ -2,6 +2,7 @@
 /resources/*
 !/resources/LiveVD/
 /resources/LiveVD/*
+!/resources/LiveVD/*.sh
 !/resources/LiveVD/Scores/
 
 /VMAF_VirtEnv/*
