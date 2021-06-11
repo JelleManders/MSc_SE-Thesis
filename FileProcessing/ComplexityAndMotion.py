@@ -1,6 +1,36 @@
 import subprocess
 import os
 
+def Comp_Motion_comp_segments():
+	# The segements have three different lengths
+	for seg_len in ['5s', '2s', '1s']:
+		# Each length has its own directory
+		ref = '../resources/LiveVD/' + seg_len + '/Compressed/'
+		for f in os.listdir(ref):
+			framerate = get_fps(f)
+
+			for btr in ["0064k", "0640k", "0768k", "1024k", "2048k", "3072k", "4096k", "5120k"]:
+
+				result = subprocess.run(['ffmpeg', 
+					'-s', '768x432', 
+					'-i', ref+f, 
+					'-r', framerate, 
+					'-c:v', 'libx264', 
+					'-b:v', btr, 
+					'../resources/LiveVD/ref/test.mp4'], stderr  = subprocess.PIPE)
+
+				decoded = result.stderr.decode('utf-8')
+
+				subprocess.run(['rm', '../resources/LiveVD/ref/test.mp4'])
+
+				I_QP, I_bits, P_QP, P_bits = read_output(decoded)
+
+				C = I_bits / (2 * 10**6 * 0.91**I_QP)
+				M = I_bits / (2 * 10**6 * 0.87**I_QP)
+
+				print(f[:3] + " - " + btr + ":\t" + str(round(C,5)) + "\t" + str(round(M,5)))
+
+
 def Comp_Motion_comp():
 	ref = '../resources/LiveVD/ref/'
 	for f in os.listdir(ref):
