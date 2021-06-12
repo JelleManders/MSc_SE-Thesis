@@ -4,8 +4,9 @@ import os
 def Comp_Motion_comp_segments():
 	# The segements have three different lengths
 	for seg_len in ['5s', '2s', '1s']:
+		print("\n##########################\nWorking on segment size " + seg_len + "\n##########################")
 		# Each length has its own directory
-		ref = '../resources/LiveVD/' + seg_len + '/Compressed/'
+		ref = '../resources/LiveVD/' + seg_len + '/ref/'
 		for f in os.listdir(ref):
 			framerate = get_fps(f)
 
@@ -26,10 +27,9 @@ def Comp_Motion_comp_segments():
 				I_QP, I_bits, P_QP, P_bits = read_output(decoded)
 
 				C = I_bits / (2 * 10**6 * 0.91**I_QP)
-				M = I_bits / (2 * 10**6 * 0.87**I_QP)
+				M = P_bits / (2 * 10**6 * 0.87**P_QP)
 
-				print(f[:3] + " - " + btr + ":\t" + str(round(C,5)) + "\t" + str(round(M,5)))
-
+				print(f[:3] + " - " + btr + " - " + f[-9:-4] + ":\t" + str(round(C,5)) + "\t" + str(round(M,5)))
 
 def Comp_Motion_comp():
 	ref = '../resources/LiveVD/ref/'
@@ -55,7 +55,7 @@ def Comp_Motion_comp():
 			I_QP, I_bits, P_QP, P_bits = read_output(decoded)
 
 			C = I_bits / (2 * 10**6 * 0.91**I_QP)
-			M = I_bits / (2 * 10**6 * 0.87**I_QP)
+			M = P_bits / (2 * 10**6 * 0.87**P_QP)
 
 			print(f[:3] + " - " + btr + ":\t" + str(round(C,5)) + "\t" + str(round(M,5)))
 
@@ -82,7 +82,7 @@ def Comp_Motion_ref():
 		I_QP, I_bits, P_QP, P_bits = read_output(decoded)
 
 		C = I_bits / (2 * 10**6 * 0.91**I_QP)
-		M = I_bits / (2 * 10**6 * 0.87**I_QP)
+		M = P_bits / (2 * 10**6 * 0.87**P_QP)
 
 		print("Comp: " + str(C) + ", Mot: " + str(M))
 	
@@ -122,4 +122,6 @@ def get_stats(data):
 
 	return QP, Bits
 
-Comp_Motion_comp()
+Comp_Motion_comp_segments()
+
+# Comp_Motion_comp()
