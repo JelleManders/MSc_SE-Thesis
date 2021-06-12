@@ -10,4 +10,4 @@
 
 *.pyc
 **/__pycache__/**
-Fileprocessing/MultiProcess.py
+FileProcessing/MultiProcess.py
