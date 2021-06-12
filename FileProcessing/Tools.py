@@ -76,6 +76,33 @@ def LiveVD_relative_path(ref, cat, btr=None):
 		path += "_btr" + btr + ".yuv"
 	return path
 
+# Calculate the relative path of any segmented LiveVD .yuv file, given 
+#   the category, bitrate, length, and part number
+def LiveVD_segment_relative_path(cat, btr, length, prt):
+	# conversion table for integer representations of btr into the strings used for the paths
+	btr_int_to_string = {  64: "0064k",  640: "0640k",  768: "0768k", 1024: "1024k", 
+	                     2048: "2048k", 3072: "3072k", 4096: "4096k", 5120: "5120k"}
+	btr = btr_int_to_string[btr]
+
+	# lookup table to find the framerate of any given category
+	cat_to_fps = {'bs': 25, 'mc': 50, 'pa': 25, 'pr': 50, 'rb': 25, 
+	              'rh': 25, 'sf': 25, 'sh': 50, 'st': 25, 'tr': 25}
+
+	# all paths start with the same relative string, append ref or Compressed/{btr}
+	path = "../resources/LiveVD/"
+	path += str(length) + "s/"
+	path += btr + "/"
+
+	# All paths refer to their framerates, end with yuv or insert the bitrate
+	path += cat + "1_" + str(cat_to_fps[cat]) + "fps_768x432"
+	path += "_btr" + btr + "_"
+	path += str(length) + "s_"
+	path += "part" + str(prt) + ".yuv"
+	
+	return path
+
+	bs1_25fps_768x432_btr0640k_5s_part0.yuv
+
 # returns a list of tuples containing the matching of categories with their bitrates
 def LiveVD_cats():
 	return ['bs', 'mc', 'pa', 'pr','rb','rh','sf','sh','st','tr']
@@ -108,5 +135,15 @@ def LiveVD_ref_to_dis():
 	paths = []
 	for cat in LiveVD_cats():
 		for btr in bitrates():
-			paths.append((LiveVD_relative_path(True, cat), LiveVD_relative_path(False, cat, btr)))
+			paths.append(LiveVD_relative_path(True, cat), LiveVD_relative_path(False, cat, btr))
+	return paths
+
+def LiveVD_dis_cat_segLen(cat, length):
+	paths = []
+	for btr in bitrates():
+		for prt in range(10//length):
+			if (length == 1 and cat == "bs" and prt == 9):
+				pass
+			else:
+				paths.append(LiveVD_segment_relative_path(cat, btr, length, prt))
 	return paths
