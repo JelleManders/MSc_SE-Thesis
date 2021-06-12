@@ -9,4 +9,5 @@
 /libvmaf/*
 
 *.pyc
-**/__pycache__/**Fileprocessing/Multiprocess.py
+**/__pycache__/**
+Fileprocessing/Multiprocess.py
