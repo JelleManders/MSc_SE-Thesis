@@ -147,6 +147,3 @@ def LiveVD_dis_cat_segLen(cat, length):
 			else:
 				paths.append(LiveVD_segment_relative_path(cat, btr, length, prt))
 	return paths
-
-for elem in LiveVD_dis_cat_segLen("bs", 5):
-	print(elem)

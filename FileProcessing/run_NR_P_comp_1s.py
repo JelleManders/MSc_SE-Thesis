@@ -83,3 +83,4 @@ def run_NR_P_comp_1s(category):
 	log_file.write(t() + " > Done. Results can be found in ../resources/LiveVD/Scores/NR-P_comp_1s_" + category + "_scores.txt" + "\n")
 	log_file.close()
 
+run_all_1s()
