@@ -90,7 +90,7 @@ def LiveVD_segment_relative_path(cat, btr, length, prt):
 
 	# all paths start with the same relative string, append ref or Compressed/{btr}
 	path = "../resources/LiveVD/"
-	path += str(length) + "s/"
+	path += str(length) + "s/Compressed/"
 	path += btr + "/"
 
 	# All paths refer to their framerates, end with yuv or insert the bitrate
@@ -147,3 +147,6 @@ def LiveVD_dis_cat_segLen(cat, length):
 			else:
 				paths.append(LiveVD_segment_relative_path(cat, btr, length, prt))
 	return paths
+
+for elem in LiveVD_dis_cat_segLen("bs", 5):
+	print(elem)
