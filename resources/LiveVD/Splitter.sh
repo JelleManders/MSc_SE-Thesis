@@ -28,95 +28,95 @@ set -e
 
 
 
-# # Split all of the compressed video's into 1 second segments
-# for btr in "0064k" "0640k" "0768k" "1024k" "2048k" "3072k" "4096k" "5120k"
-# do
-# 	# First move to the appropriate bitrate directory
-# 	cd "./Compressed/${btr}"/
+# Split all of the compressed video's into 1 second segments
+for btr in "0064k" "0640k" "0768k" "1024k" "2048k" "3072k" "4096k" "5120k"
+do
+	# First move to the appropriate bitrate directory
+	cd "./Compressed/${btr}"/
 
-# 	# Handle 25fps and 50fps video's separately
-# 	for ref_yuv in ./*25*.yuv
-# 	do 
-# 		# Construct the target path, include the bitrate, the duration, and the part number
-# 		res="${ref_yuv%.yuv}_1s_part%01d.yuv"
+	# Handle 25fps and 50fps video's separately
+	for ref_yuv in ./*25*.yuv
+	do 
+		# Construct the target path, include the bitrate, the duration, and the part number
+		res="${ref_yuv%.yuv}_1s_part%01d.yuv"
 
-# 		# Split the video into two fragments, the split should be at frame 125 (half)
-# 		ffmpeg -s 768x432 -i "$ref_yuv" -r 25 -codec copy -map 0 -f segment -segment_frames 25,50,75,100,125,150,175,200,225 "$res"
-# 	done
+		# Split the video into two fragments, the split should be at frame 125 (half)
+		ffmpeg -s 768x432 -i "$ref_yuv" -r 25 -codec copy -map 0 -f segment -segment_frames 25,50,75,100,125,150,175,200,225 "$res"
+	done
 
-# 	for ref_yuv in ./*50*.yuv
-# 	do 
-# 		# Construct the target path, include the bitrate, the duration, and the part number
-# 		res="${ref_yuv%.yuv}_1s_part%01d.yuv"
+	for ref_yuv in ./*50*.yuv
+	do 
+		# Construct the target path, include the bitrate, the duration, and the part number
+		res="${ref_yuv%.yuv}_1s_part%01d.yuv"
 
-# 		# split the video into two fragments, the split should be at frame 250 (half)
-# 		ffmpeg -s 768x432 -i "$ref_yuv" -r 50 -codec copy -map 0 -f segment -segment_frames 50,100,150,200,250,300,350,400,450 "$res"
-# 	done 
+		# split the video into two fragments, the split should be at frame 250 (half)
+		ffmpeg -s 768x432 -i "$ref_yuv" -r 50 -codec copy -map 0 -f segment -segment_frames 50,100,150,200,250,300,350,400,450 "$res"
+	done 
 
-# 	mv ./*1s*.yuv "../../1s/Compressed/${btr}/"
-# 	cd ../..
-# done
-
-
-# # Split all of the compressed video's into 2 second segments
-# for btr in "0064k" "0640k" "0768k" "1024k" "2048k" "3072k" "4096k" "5120k"
-# do
-# 	# First move to the appropriate bitrate directory
-# 	cd "./Compressed/${btr}"/
-
-# 	# Handle 25fps and 50fps video's separately
-# 	for ref_yuv in ./*25*.yuv
-# 	do 
-# 		# Construct the target path, include the bitrate, the duration, and the part number
-# 		res="${ref_yuv%.yuv}_2s_part%01d.yuv"
-
-# 		# Split the video into two fragments, the split should be at frame 125 (half)
-# 		ffmpeg -s 768x432 -i "$ref_yuv" -r 25 -codec copy -map 0 -f segment -segment_frames 50,100,150,200 "$res"
-# 	done
-
-# 	for ref_yuv in ./*50*.yuv
-# 	do 
-# 		# Construct the target path, include the bitrate, the duration, and the part number
-# 		res="${ref_yuv%.yuv}_2s_part%01d.yuv"
-
-# 		# split the video into two fragments, the split should be at frame 250 (half)
-# 		ffmpeg -s 768x432 -i "$ref_yuv" -r 50 -codec copy -map 0 -f segment -segment_frames 100,200,300,400 "$res"
-# 	done 
-
-# 	mv ./*2s*.yuv "../../2s/Compressed/${btr}/"
-# 	cd ../..
-# done
+	mv ./*1s*.yuv "../../1s/Compressed/${btr}/"
+	cd ../..
+done
 
 
+# Split all of the compressed video's into 2 second segments
+for btr in "0064k" "0640k" "0768k" "1024k" "2048k" "3072k" "4096k" "5120k"
+do
+	# First move to the appropriate bitrate directory
+	cd "./Compressed/${btr}"/
 
-# # Split all of the compressed video's into 5 second segments
-# for btr in "0064k" "0640k" "0768k" "1024k" "2048k" "3072k" "4096k" "5120k"
-# do
-# 	# First move to the appropriate bitrate directory
-# 	cd "./Compressed/${btr}"/
+	# Handle 25fps and 50fps video's separately
+	for ref_yuv in ./*25*.yuv
+	do 
+		# Construct the target path, include the bitrate, the duration, and the part number
+		res="${ref_yuv%.yuv}_2s_part%01d.yuv"
 
-# 	# Handle 25fps and 50fps video's separately
-# 	for ref_yuv in ./*25*.yuv
-# 	do 
-# 		# Construct the target path, include the bitrate, the duration, and the part number
-# 		res="${ref_yuv%.yuv}_5s_part%01d.yuv"
+		# Split the video into two fragments, the split should be at frame 125 (half)
+		ffmpeg -s 768x432 -i "$ref_yuv" -r 25 -codec copy -map 0 -f segment -segment_frames 50,100,150,200 "$res"
+	done
 
-# 		# Split the video into two fragments, the split should be at frame 125 (half)
-# 		ffmpeg -s 768x432 -i "$ref_yuv" -r 25 -codec copy -map 0 -f segment -segment_frames 125 "$res"
-# 	done
+	for ref_yuv in ./*50*.yuv
+	do 
+		# Construct the target path, include the bitrate, the duration, and the part number
+		res="${ref_yuv%.yuv}_2s_part%01d.yuv"
 
-# 	for ref_yuv in ./*50*.yuv
-# 	do 
-# 		# Construct the target path, include the bitrate, the duration, and the part number
-# 		res="${ref_yuv%.yuv}_5s_part%01d.yuv"
+		# split the video into two fragments, the split should be at frame 250 (half)
+		ffmpeg -s 768x432 -i "$ref_yuv" -r 50 -codec copy -map 0 -f segment -segment_frames 100,200,300,400 "$res"
+	done 
 
-# 		# split the video into two fragments, the split should be at frame 250 (half)
-# 		ffmpeg -s 768x432 -i "$ref_yuv" -r 50 -codec copy -map 0 -f segment -segment_frames 250 "$res"
-# 	done 
+	mv ./*2s*.yuv "../../2s/Compressed/${btr}/"
+	cd ../..
+done
 
-# 	mv ./*5s*.yuv "../../5s/Compressed/${btr}/"
-# 	cd ../..
-# done
+
+
+# Split all of the compressed video's into 5 second segments
+for btr in "0064k" "0640k" "0768k" "1024k" "2048k" "3072k" "4096k" "5120k"
+do
+	# First move to the appropriate bitrate directory
+	cd "./Compressed/${btr}"/
+
+	# Handle 25fps and 50fps video's separately
+	for ref_yuv in ./*25*.yuv
+	do 
+		# Construct the target path, include the bitrate, the duration, and the part number
+		res="${ref_yuv%.yuv}_5s_part%01d.yuv"
+
+		# Split the video into two fragments, the split should be at frame 125 (half)
+		ffmpeg -s 768x432 -i "$ref_yuv" -r 25 -codec copy -map 0 -f segment -segment_frames 125 "$res"
+	done
+
+	for ref_yuv in ./*50*.yuv
+	do 
+		# Construct the target path, include the bitrate, the duration, and the part number
+		res="${ref_yuv%.yuv}_5s_part%01d.yuv"
+
+		# split the video into two fragments, the split should be at frame 250 (half)
+		ffmpeg -s 768x432 -i "$ref_yuv" -r 50 -codec copy -map 0 -f segment -segment_frames 250 "$res"
+	done 
+
+	mv ./*5s*.yuv "../../5s/Compressed/${btr}/"
+	cd ../..
+done
 
 
 # for btr in "0064k" "0640k" "0768k" "1024k" "2048k" "3072k" "4096k" "5120k"
