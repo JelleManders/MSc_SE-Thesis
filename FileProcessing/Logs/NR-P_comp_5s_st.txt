@@ -1,0 +1,116 @@
+2021-06-14 09:58:25 > Starting NR-P metrics of 5 second compressed videos...
+2021-06-14 09:58:25 > Opened results file...
+2021-06-14 09:58:25 > Starting analysis of ../resources/LiveVD/5s/Compressed/0064k/st1_25fps_768x432_btr0064k_5s_part0.yuv
+2021-06-14 10:11:13 > finished blur: 16.629082995756175
+2021-06-14 10:34:55 > finished noise: mean = 1.299044812419658, ratio = 0.585432990933642
+2021-06-14 11:14:52 > finished blockiness: 1.9591060013295172
+2021-06-14 11:14:52 > finished motion intensity: 1636.267151715442
+2021-06-14 11:14:52 > Finished analysis of ../resources/LiveVD/5s/Compressed/0064k/st1_25fps_768x432_btr0064k_5s_part0.yuv
+2021-06-14 11:14:52 > Wrote results of ../resources/LiveVD/5s/Compressed/0064k/st1_25fps_768x432_btr0064k_5s_part0.yuv to results file.
+2021-06-14 11:14:52 > Starting analysis of ../resources/LiveVD/5s/Compressed/0064k/st1_25fps_768x432_btr0064k_5s_part1.yuv
+2021-06-14 11:52:46 > finished blur: 25.592360001929002
+2021-06-14 13:03:24 > finished noise: mean = 1.4418323087392326, ratio = 0.6018209635416668
+2021-06-14 14:22:40 > finished blockiness: 1.9555499345612892
+2021-06-14 14:22:41 > finished motion intensity: 1154.2533720232057
+2021-06-14 14:22:41 > Finished analysis of ../resources/LiveVD/5s/Compressed/0064k/st1_25fps_768x432_btr0064k_5s_part1.yuv
+2021-06-14 14:22:41 > Wrote results of ../resources/LiveVD/5s/Compressed/0064k/st1_25fps_768x432_btr0064k_5s_part1.yuv to results file.
+2021-06-14 14:22:41 > Starting analysis of ../resources/LiveVD/5s/Compressed/0640k/st1_25fps_768x432_btr0640k_5s_part0.yuv
+2021-06-14 15:00:45 > finished blur: 167.5869347993827
+2021-06-14 16:10:04 > finished noise: mean = 2.790895959020198, ratio = 0.5643899739583331
+2021-06-14 17:28:06 > finished blockiness: 1.9147776149915297
+2021-06-14 17:28:06 > finished motion intensity: 3143.4238306852153
+2021-06-14 17:28:06 > Finished analysis of ../resources/LiveVD/5s/Compressed/0640k/st1_25fps_768x432_btr0640k_5s_part0.yuv
+2021-06-14 17:28:06 > Wrote results of ../resources/LiveVD/5s/Compressed/0640k/st1_25fps_768x432_btr0640k_5s_part0.yuv to results file.
+2021-06-14 17:28:06 > Starting analysis of ../resources/LiveVD/5s/Compressed/0640k/st1_25fps_768x432_btr0640k_5s_part1.yuv
+2021-06-14 18:04:01 > finished blur: 226.25875824652778
+2021-06-14 19:13:49 > finished noise: mean = 2.98725591828626, ratio = 0.5616494261188273
+2021-06-14 20:33:37 > finished blockiness: 1.9251948672124102
+2021-06-14 20:33:37 > finished motion intensity: 2380.295885333016
+2021-06-14 20:33:37 > Finished analysis of ../resources/LiveVD/5s/Compressed/0640k/st1_25fps_768x432_btr0640k_5s_part1.yuv
+2021-06-14 20:33:37 > Wrote results of ../resources/LiveVD/5s/Compressed/0640k/st1_25fps_768x432_btr0640k_5s_part1.yuv to results file.
+2021-06-14 20:33:37 > Starting analysis of ../resources/LiveVD/5s/Compressed/0768k/st1_25fps_768x432_btr0768k_5s_part0.yuv
+2021-06-14 21:09:40 > finished blur: 176.50966536458333
+2021-06-14 22:13:56 > finished noise: mean = 2.8847453876392644, ratio = 0.5591339940200617
+2021-06-14 23:35:44 > finished blockiness: 1.913278923712591
+2021-06-14 23:35:45 > finished motion intensity: 3190.6049385685674
+2021-06-14 23:35:45 > Finished analysis of ../resources/LiveVD/5s/Compressed/0768k/st1_25fps_768x432_btr0768k_5s_part0.yuv
+2021-06-14 23:35:45 > Wrote results of ../resources/LiveVD/5s/Compressed/0768k/st1_25fps_768x432_btr0768k_5s_part0.yuv to results file.
+2021-06-14 23:35:45 > Starting analysis of ../resources/LiveVD/5s/Compressed/0768k/st1_25fps_768x432_btr0768k_5s_part1.yuv
+2021-06-15 00:10:34 > finished blur: 232.64163985339505
+2021-06-15 01:14:49 > finished noise: mean = 3.0241796454660017, ratio = 0.5549337384259259
+2021-06-15 02:32:19 > finished blockiness: 1.9248896012840206
+2021-06-15 02:32:19 > finished motion intensity: 2404.4968588046136
+2021-06-15 02:32:19 > Finished analysis of ../resources/LiveVD/5s/Compressed/0768k/st1_25fps_768x432_btr0768k_5s_part1.yuv
+2021-06-15 02:32:19 > Wrote results of ../resources/LiveVD/5s/Compressed/0768k/st1_25fps_768x432_btr0768k_5s_part1.yuv to results file.
+2021-06-15 02:32:19 > Starting analysis of ../resources/LiveVD/5s/Compressed/1024k/st1_25fps_768x432_btr1024k_5s_part0.yuv
+2021-06-15 03:10:43 > finished blur: 186.26257730516969
+2021-06-15 04:17:12 > finished noise: mean = 2.9779256553020756, ratio = 0.5510234857253088
+2021-06-15 05:36:56 > finished blockiness: 1.9128181008102463
+2021-06-15 05:36:57 > finished motion intensity: 3242.2046477525437
+2021-06-15 05:36:57 > Finished analysis of ../resources/LiveVD/5s/Compressed/1024k/st1_25fps_768x432_btr1024k_5s_part0.yuv
+2021-06-15 05:36:57 > Wrote results of ../resources/LiveVD/5s/Compressed/1024k/st1_25fps_768x432_btr1024k_5s_part0.yuv to results file.
+2021-06-15 05:36:57 > Starting analysis of ../resources/LiveVD/5s/Compressed/1024k/st1_25fps_768x432_btr1024k_5s_part1.yuv
+2021-06-15 06:13:05 > finished blur: 240.1585038580246
+2021-06-15 07:22:38 > finished noise: mean = 3.0562680031650866, ratio = 0.5485577739197532
+2021-06-15 08:41:47 > finished blockiness: 1.92508301036644
+2021-06-15 08:41:48 > finished motion intensity: 2428.9323434634575
+2021-06-15 08:41:48 > Finished analysis of ../resources/LiveVD/5s/Compressed/1024k/st1_25fps_768x432_btr1024k_5s_part1.yuv
+2021-06-15 08:41:48 > Wrote results of ../resources/LiveVD/5s/Compressed/1024k/st1_25fps_768x432_btr1024k_5s_part1.yuv to results file.
+2021-06-15 08:41:48 > Starting analysis of ../resources/LiveVD/5s/Compressed/2048k/st1_25fps_768x432_btr2048k_5s_part0.yuv
+2021-06-15 09:20:16 > finished blur: 198.71126610725307
+2021-06-15 10:32:00 > finished noise: mean = 3.092802406644523, ratio = 0.5438744936342592
+2021-06-15 11:53:48 > finished blockiness: 1.9132883394752076
+2021-06-15 11:53:48 > finished motion intensity: 3291.9337945723923
+2021-06-15 11:53:48 > Finished analysis of ../resources/LiveVD/5s/Compressed/2048k/st1_25fps_768x432_btr2048k_5s_part0.yuv
+2021-06-15 11:53:48 > Wrote results of ../resources/LiveVD/5s/Compressed/2048k/st1_25fps_768x432_btr2048k_5s_part0.yuv to results file.
+2021-06-15 11:53:48 > Starting analysis of ../resources/LiveVD/5s/Compressed/2048k/st1_25fps_768x432_btr2048k_5s_part1.yuv
+2021-06-15 12:28:45 > finished blur: 252.59726697530874
+2021-06-15 13:33:13 > finished noise: mean = 3.099037217312598, ratio = 0.5435192660108025
+2021-06-15 14:51:58 > finished blockiness: 1.9241741372377312
+2021-06-15 14:51:59 > finished motion intensity: 2457.3780865470076
+2021-06-15 14:51:59 > Finished analysis of ../resources/LiveVD/5s/Compressed/2048k/st1_25fps_768x432_btr2048k_5s_part1.yuv
+2021-06-15 14:51:59 > Wrote results of ../resources/LiveVD/5s/Compressed/2048k/st1_25fps_768x432_btr2048k_5s_part1.yuv to results file.
+2021-06-15 14:51:59 > Starting analysis of ../resources/LiveVD/5s/Compressed/3072k/st1_25fps_768x432_btr3072k_5s_part0.yuv
+2021-06-15 15:29:25 > finished blur: 203.06957518325615
+2021-06-15 16:38:38 > finished noise: mean = 3.12160097086007, ratio = 0.5437279851466049
+2021-06-15 17:55:03 > finished blockiness: 1.913124794009668
+2021-06-15 17:55:03 > finished motion intensity: 3301.7301829398484
+2021-06-15 17:55:03 > Finished analysis of ../resources/LiveVD/5s/Compressed/3072k/st1_25fps_768x432_btr3072k_5s_part0.yuv
+2021-06-15 17:55:03 > Wrote results of ../resources/LiveVD/5s/Compressed/3072k/st1_25fps_768x432_btr3072k_5s_part0.yuv to results file.
+2021-06-15 17:55:03 > Starting analysis of ../resources/LiveVD/5s/Compressed/3072k/st1_25fps_768x432_btr3072k_5s_part1.yuv
+2021-06-15 18:31:38 > finished blur: 258.4215560378086
+2021-06-15 19:41:19 > finished noise: mean = 3.109542051285699, ratio = 0.5426554783950617
+2021-06-15 20:59:52 > finished blockiness: 1.9244227377526213
+2021-06-15 20:59:52 > finished motion intensity: 2467.409972121899
+2021-06-15 20:59:52 > Finished analysis of ../resources/LiveVD/5s/Compressed/3072k/st1_25fps_768x432_btr3072k_5s_part1.yuv
+2021-06-15 20:59:52 > Wrote results of ../resources/LiveVD/5s/Compressed/3072k/st1_25fps_768x432_btr3072k_5s_part1.yuv to results file.
+2021-06-15 20:59:52 > Starting analysis of ../resources/LiveVD/5s/Compressed/4096k/st1_25fps_768x432_btr4096k_5s_part0.yuv
+2021-06-15 21:35:16 > finished blur: 206.02233531057098
+2021-06-15 22:40:20 > finished noise: mean = 3.1386960433073985, ratio = 0.5444817226080247
+2021-06-15 23:55:44 > finished blockiness: 1.9136068639734884
+2021-06-15 23:55:44 > finished motion intensity: 3306.7117214521422
+2021-06-15 23:55:44 > Finished analysis of ../resources/LiveVD/5s/Compressed/4096k/st1_25fps_768x432_btr4096k_5s_part0.yuv
+2021-06-15 23:55:44 > Wrote results of ../resources/LiveVD/5s/Compressed/4096k/st1_25fps_768x432_btr4096k_5s_part0.yuv to results file.
+2021-06-15 23:55:44 > Starting analysis of ../resources/LiveVD/5s/Compressed/4096k/st1_25fps_768x432_btr4096k_5s_part1.yuv
+2021-06-16 00:32:28 > finished blur: 262.44774821566375
+2021-06-16 01:37:40 > finished noise: mean = 3.1143405683823877, ratio = 0.5422255015432098
+2021-06-16 02:58:57 > finished blockiness: 1.924449886173723
+2021-06-16 02:58:57 > finished motion intensity: 2473.7773496333098
+2021-06-16 02:58:57 > Finished analysis of ../resources/LiveVD/5s/Compressed/4096k/st1_25fps_768x432_btr4096k_5s_part1.yuv
+2021-06-16 02:58:57 > Wrote results of ../resources/LiveVD/5s/Compressed/4096k/st1_25fps_768x432_btr4096k_5s_part1.yuv to results file.
+2021-06-16 02:58:57 > Starting analysis of ../resources/LiveVD/5s/Compressed/5120k/st1_25fps_768x432_btr5120k_5s_part0.yuv
+2021-06-16 03:32:41 > finished blur: 208.28613059413576
+2021-06-16 04:36:04 > finished noise: mean = 3.1501378187258786, ratio = 0.544969208140432
+2021-06-16 05:49:16 > finished blockiness: 1.913237423955348
+2021-06-16 05:49:16 > finished motion intensity: 3310.2294978696464
+2021-06-16 05:49:16 > Finished analysis of ../resources/LiveVD/5s/Compressed/5120k/st1_25fps_768x432_btr5120k_5s_part0.yuv
+2021-06-16 05:49:16 > Wrote results of ../resources/LiveVD/5s/Compressed/5120k/st1_25fps_768x432_btr5120k_5s_part0.yuv to results file.
+2021-06-16 05:49:16 > Starting analysis of ../resources/LiveVD/5s/Compressed/5120k/st1_25fps_768x432_btr5120k_5s_part1.yuv
+2021-06-16 06:21:51 > finished blur: 265.71266724537026
+2021-06-16 07:23:21 > finished noise: mean = 3.116865902804793, ratio = 0.5416958188657409
+2021-06-16 08:34:54 > finished blockiness: 1.924511790893445
+2021-06-16 08:34:55 > finished motion intensity: 2479.3666611926033
+2021-06-16 08:34:55 > Finished analysis of ../resources/LiveVD/5s/Compressed/5120k/st1_25fps_768x432_btr5120k_5s_part1.yuv
+2021-06-16 08:34:55 > Wrote results of ../resources/LiveVD/5s/Compressed/5120k/st1_25fps_768x432_btr5120k_5s_part1.yuv to results file.
+2021-06-16 08:34:55 > Finished analysis of all videos! closing results_file...
+2021-06-16 08:34:55 > Done. Results can be found in ../resources/LiveVD/Scores/NR-P_comp_5s_st_scores.txt

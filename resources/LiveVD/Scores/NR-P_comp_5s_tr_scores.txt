@@ -1,0 +1,16 @@
+../resources/LiveVD/5s/Compressed/0064k/tr1_25fps_768x432_btr0064k_5s_part0.yuv	Blur:    43.02632	N_mean:  2.11781	N_ratio: 0.52731	Block:   1.96558	Motion:  2063.4481
+../resources/LiveVD/5s/Compressed/0064k/tr1_25fps_768x432_btr0064k_5s_part1.yuv	Blur:    41.6346	N_mean:  2.36243	N_ratio: 0.5142	Block:   1.96715	Motion:  2766.59435
+../resources/LiveVD/5s/Compressed/0640k/tr1_25fps_768x432_btr0640k_5s_part0.yuv	Blur:    237.62736	N_mean:  4.71772	N_ratio: 0.49524	Block:   1.9095	Motion:  4535.42397
+../resources/LiveVD/5s/Compressed/0640k/tr1_25fps_768x432_btr0640k_5s_part1.yuv	Blur:    183.95462	N_mean:  4.38162	N_ratio: 0.5038	Block:   1.90586	Motion:  4723.52723
+../resources/LiveVD/5s/Compressed/0768k/tr1_25fps_768x432_btr0768k_5s_part0.yuv	Blur:    252.11824	N_mean:  4.79452	N_ratio: 0.4944	Block:   1.90943	Motion:  4562.30923
+../resources/LiveVD/5s/Compressed/0768k/tr1_25fps_768x432_btr0768k_5s_part1.yuv	Blur:    196.43575	N_mean:  4.46736	N_ratio: 0.50231	Block:   1.90315	Motion:  4742.4461
+../resources/LiveVD/5s/Compressed/1024k/tr1_25fps_768x432_btr1024k_5s_part0.yuv	Blur:    272.81797	N_mean:  4.91626	N_ratio: 0.4903	Block:   1.90583	Motion:  4594.24507
+../resources/LiveVD/5s/Compressed/1024k/tr1_25fps_768x432_btr1024k_5s_part1.yuv	Blur:    211.2075	N_mean:  4.52842	N_ratio: 0.49808	Block:   1.9011	Motion:  4763.81256
+../resources/LiveVD/5s/Compressed/2048k/tr1_25fps_768x432_btr2048k_5s_part0.yuv	Blur:    310.22684	N_mean:  5.0245	N_ratio: 0.47777	Block:   1.8997	Motion:  4640.35663
+../resources/LiveVD/5s/Compressed/2048k/tr1_25fps_768x432_btr2048k_5s_part1.yuv	Blur:    239.8625	N_mean:  4.64785	N_ratio: 0.49051	Block:   1.89592	Motion:  4795.64432
+../resources/LiveVD/5s/Compressed/3072k/tr1_25fps_768x432_btr3072k_5s_part0.yuv	Blur:    324.88147	N_mean:  5.09163	N_ratio: 0.47678	Block:   1.89908	Motion:  4653.83245
+../resources/LiveVD/5s/Compressed/3072k/tr1_25fps_768x432_btr3072k_5s_part1.yuv	Blur:    250.63805	N_mean:  4.7185	N_ratio: 0.48949	Block:   1.89346	Motion:  4806.98165
+../resources/LiveVD/5s/Compressed/4096k/tr1_25fps_768x432_btr4096k_5s_part0.yuv	Blur:    333.9468	N_mean:  5.13172	N_ratio: 0.47604	Block:   1.89836	Motion:  4660.59749
+../resources/LiveVD/5s/Compressed/4096k/tr1_25fps_768x432_btr4096k_5s_part1.yuv	Blur:    256.99177	N_mean:  4.76883	N_ratio: 0.48904	Block:   1.89301	Motion:  4811.90758
+../resources/LiveVD/5s/Compressed/5120k/tr1_25fps_768x432_btr5120k_5s_part0.yuv	Blur:    340.60334	N_mean:  5.16659	N_ratio: 0.47615	Block:   1.89792	Motion:  4663.60458
+../resources/LiveVD/5s/Compressed/5120k/tr1_25fps_768x432_btr5120k_5s_part1.yuv	Blur:    261.10387	N_mean:  4.79232	N_ratio: 0.48846	Block:   1.8928	Motion:  4815.69394
