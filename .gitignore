@@ -8,6 +8,8 @@
 /VMAF_VirtEnv/*
 /libvmaf/*
 
+/ERT_LSB/Graphs/*
+
 *.pyc
 **/__pycache__/**
 FileProcessing/MultiProcess.py
