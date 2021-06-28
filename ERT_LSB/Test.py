@@ -33,24 +33,71 @@ def evaluate_model(model, X, y):
 	predictions = cross_val_predict(model, X, y)
 	return scores, predictions
 
-# define dataset
-Metric_data, VMAF_labels = ds.data_10s()
+def test(plot_title, Metric_data, VMAF_labels):
+	# construct a ensemble regression tree
+	ert = get_model()
 
-# construct a ensemble regression tree
-ert = get_model()
+	# evaluate the model
+	scores, predictions = evaluate_model(ert, Metric_data, VMAF_labels)
 
-# evaluate the model
-scores, predictions = evaluate_model(ert, Metric_data, VMAF_labels)
+	# summarize the performance
+	print('>%s %.3f (%.3f)' % ("test", mean(scores), std(scores)))
 
-# summarize the performance
-print('>%s %.3f (%.3f)' % ("test", mean(scores), std(scores)))
+	# Calculate the Pearson Coefficient of the predictions vs the VMAF labels
+	pcc = str(corrcoef(VMAF_labels, predictions)[0,1])
+	print("PCC: " + pcc)
 
-# Calculate the Pearson Coefficient of the predictions vs the VMAF labels
-print("PCC: " + str(corrcoef(VMAF_labels, predictions)[0,1]))
+	# Plot the predictions against the VMAF labels
+	fig, ax = plt.subplots()
+	ax.scatter(VMAF_labels, predictions)
+	ax.set_xlabel("VMAF")
+	ax.set_ylabel("ERT-LSB")
+	plt.title(plot_title, loc='left')
+	plt.title("PCC: " + pcc, loc='right')
+	plt.show()
 
-# Plot the predictions against the VMAF labels
-fig, ax = plt.subplots()
-ax.scatter(VMAF_labels, predictions)
-ax.set_xlabel("VMAF")
-ax.set_ylabel("ERT-LSB")
-plt.show()
+# def run_test_10s():
+# 	data, labels = ds.data_10s()
+# 	test("10s", data, labels)
+
+# def run_test_5s():
+# 	data, labels = ds.data_5s()
+# 	test("5s", data, labels)
+	
+# def run_test_2s():
+# 	data, labels = ds.data_2s()
+# 	test("2s", data, labels)
+	
+# def run_test_1s():
+# 	data, labels = ds.data_1s()
+# 	test("1s", data, labels)
+	
+# run_test_10s()
+# run_test_5s()
+# run_test_2s()
+# run_test_1s()
+
+def run_test_10s_equalized():
+	data, labels = ds.data_10s()
+	eqdata, eqlabels = ds.equalize(data, labels)
+	test("10s, equalized", eqdata, eqlabels)
+
+def run_test_5s_equalized():
+	data, labels = ds.data_5s()
+	eqdata, eqlabels = ds.equalize(data, labels)
+	test("5s, equalized", eqdata, eqlabels)
+	
+def run_test_2s_equalized():
+	data, labels = ds.data_2s()
+	eqdata, eqlabels = ds.equalize(data, labels)
+	test("2s, equalized", eqdata, eqlabels)
+	
+def run_test_1s_equalized():
+	data, labels = ds.data_1s()
+	eqdata, eqlabels = ds.equalize(data, labels)
+	test("1s, equalized", eqdata, eqlabels)
+	
+run_test_10s_equalized()
+run_test_5s_equalized()
+run_test_2s_equalized()
+run_test_1s_equalized()
